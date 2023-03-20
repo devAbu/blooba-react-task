@@ -8,8 +8,8 @@ export default function Home() {
         <h1>Movie Database</h1>
         <div className="container">
           <div className="row">
-            <Card title="Movies" />
-            <Card title="Series" />
+            <Card title="movies" />
+            <Card title="series" />
           </div>
         </div>
       </div>

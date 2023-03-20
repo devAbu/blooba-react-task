@@ -8,7 +8,7 @@ export default function Card(props) {
       <div className={classes.card}>
         <div>
           <h5>{props.title}</h5>
-          <Link to="/movies" className={classes.text}>
+          <Link to={`/${props.title}`} className={classes.text}>
             {props.title}
           </Link>
         </div>
