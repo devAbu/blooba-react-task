@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import Cards from "../components/ui/Cards";
+import Search from "../components/ui/Search";
 
 export default function Series() {
   const [loading, setLoading] = useState(true);
@@ -39,6 +40,7 @@ export default function Series() {
     <div>
       <div className="col-12 text-center">
         <h1>Series</h1>
+        <Search />
         <div className="container-fluid">
           <div className="row">
             <Cards data={gotSeries} />

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import Cards from "../components/ui/Cards";
+import Search from "../components/ui/Search";
 
 export default function Movies() {
   const [loading, setLoading] = useState(true);
@@ -38,7 +39,8 @@ export default function Movies() {
   return (
     <div>
       <div className="col-12 text-center">
-        <h1>Movies</h1>
+        <h1 className="mb-5">Movies</h1>
+        <Search />
         <div className="container-fluid">
           <div className="row">
             <Cards data={gotMovies} />
